@@ -1,7 +1,8 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html><head>
-<meta http-equiv="content-type" content="text/html; charset=windows-1252">
-  <title></title>
+<html xml:lang="en" lang="en"><head>
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Producto</title>
   <link rel="stylesheet" type="text/css" href="estilos.css" media="all">
 </head>
 
@@ -36,29 +37,32 @@
 
 <div id="articulos">
 
-  <p class="t2">Artículos en la cesta</p>
+  <p class="t2">Art&iacute;culos en la cesta</p>
 	
-  <table id="tabla_compra">
-  <tbody><tr id="conceptos">
-    <td><b>Producto</b></td>
-  	<td><b>PVP</b></td>
-    <td><b>Uds.</b></td>
-    <td><b>Eur.</b></td></tr>
+  <table id="tabla_compra" colspan="2">
+  <thead>
+  <tr id="conceptos">
+    <td><strong>Producto</strong></td>
+  	<td><strong>PVP</strong></td>
+    <td><strong>Uds.</strong></td>
+    <td><strong>Eur.</strong></td></tr>
+   </thead>
+    <tbody>
   <tr>
-    <td><b>Botella Oleum 500 ml</b> (en caja de 12 unidades)</td>    <td>45 €</td>    <td>2</td>    <td>90 €</td>
+    <td><strong>Botella Oleum 500 ml</strong> (en caja de 12 unidades)</td>    <td>45 &euro;</td>    <td>2</td>    <td>90 &euro;</td>
   </tr>
   <tr>	
-  	    <td><b>Aceitera de cristal Fenicia 500 ml</b></td>
-    <td>100 €</td>
+  	    <td><strong>Aceitera de cristal Fenicia 500 ml</strong></td>
+    <td>100 &euro;</td>
     <td>1</td>
-    <td>100 €</td>
+    <td>100 &euro;</td>
   </tr>
   <tr>	
-  	<td><b>Garrafa Pet 5 litros</b>(en caja de 3 unidades)</td>    <td>52,97 €</td>    <td>1</td>    <td>52,97€</td>
+  	<td><strong>Garrafa Pet 5 litros</strong>(en caja de 3 unidades)</td>    <td>52,97 &euro;</td>    <td>1</td>    <td>52,97 &euro;</td>
   </tr>
   <tr id="total">	
-  	<td colspan="3" align="right"><b>Precio Total</b></td>
-        <td>242,97 €</td>
+  	<td colspan="3" align="right"><strong>Precio Total</strong></td>
+        <td>242,97 &euro;</td>
   </tr>
   </tbody></table>
 	
@@ -69,77 +73,78 @@
 
 <!--
 ************************************************
-*             DATOS de facturación             *
+*             DATOS de facturaci�n             *
 ************************************************
 -->
 
 
 <div id="datos">
 
-  <p class="t2">Datos de facturación</p>
+  <p class="t2">Datos de facturaci&oacute;n</p>
 
   <p class="info"><span class="i">i</span> Los campos marcados en rojo son obligatorios.</p>
 
-  <form action="#">
+  <form action="http://www.example.com" >
 
     <div id="datos_personales">
 	    <p class="t3">Datos personales</p>
       <div class="campo_form">
-        <label>Empresa </label>
-        <input id="empresa" name="empresa" type="text">
+        <label for="empresa" >Empresa:</label> 
+        <input type="text" id="empresa" name="empresa"/>
       </div>
       <div class="campo_form">
-        <label class="obligatorio">Nombre </label>
-        <input id="nombre" name="nombre" type="text">
+        <label class="obligatorio" for="nombre">Nombre </label>
+        <input id="nombre" name="nombre" type="text"/>
       </div>
       <div class="campo_form">
-        <label class="obligatorio">Apellidos </label>
-        <input id="apellidos" name="apellidos" type="text">
+        <label class="obligatorio" for="apellidos">Apellidos </label>
+        <input id="apellidos" name="apellidos" type="text"/>
       </div>
     <div class="campo_form">
-        <label class="obligatorio">e-mail </label>
-        <input id="email" name="email" type="text">
+        <label class="obligatorio" for="email">e-mail </label>
+        <input id="email" name="email" type="text"/>
       </div>
      <div class="campo_form">
-        <label class="obligatorio">Tlf. de contacto </label>
-        <input id="tlf" name="tlf" type="text">
+        <label class="obligatorio" for="tlf">Tlf. de contacto </label>
+        <input id="tlf" name="tlf" type="text"/>
       </div>
       <div class="campo_form">
-        <label>NIF/CIF </label>
-        <input id="nif" name="nif" type="text">
+        <label for="nif">NIF/CIF </label>
+        <input id="nif" name="nif" type="text"/>
       </div>
     </div>	
 
     <div id="datos_envio">
-      <p class="t3">Datos de envío</p>
+      <p class="t3">Datos de env�o</p>
     	<div class="campo_form">
-        <label class="obligatorio">Dirección </label>
-        <input id="dir" name="dir" type="text">
+        <label class="obligatorio" for="dir">Direcci�n </label>
+        <input id="dir" name="dir" type="text"/>
       </div>
       <div class="campo_form">
-        <label class="obligatorio">Localidad </label>
-        <input id="localidad" name="localidad" type="text">
+        <label class="obligatorio" for="localidad">Localidad </label>
+        <input id="localidad" name="localidad" type="text"/>
       </div>
     	<div class="campo_form">
-        <label class="obligatorio">Provincia </label>
-        <input id="provincia" name="provincia" type="text">
+        <label class="obligatorio" for="provincia">Provincia </label>
+        <input id="provincia" name="provincia" type="text"/>
       </div>
     	<div class="campo_form">
-        <label class="obligatorio">CP </label>
-        <input id="cp" name="cp" type="text">
+        <label class="obligatorio" for="cp">CP </label>
+        <input id="cp" name="cp" type="text"/>
       </div>
       <div class="campo_form">
-       <label>Horario de entrega </label>
-       <select name="horario">    
-        	<option selected="selected" value="all">Todo el día</option>    
+       <p><label  for="horario">Horario de entrega </label>
+       <select name="horario" id="horario">    
+        	<option selected="selected" value="all">Todo el d&iacute;a</option>    
         	<option value="a">De 9:00 a 14:00 horas</option>      
         	<option value="b">De 14:00 a 19:00 horas</option>      
         </select>
+        </p>
      </div>
     </div>
 
     <div id="observaciones">
-      <label>Observaciones:</label><br>
+      <label for="obs">Observaciones:</label>
       <textarea rows="6" cols="80" id="obs" name="obs">      </textarea>
     </div>
 
@@ -153,90 +158,90 @@
 
 <!--
 ************************************************
-*           Información de GARANTIAS           *
+*           Informaci�n de GARANTIAS           *
 ************************************************
 -->
 
 
 <div id="garantias">
 
-  <p class="t2">Garantías</p>
+  <p class="t2">Garant&iacute;as</p>
 
-  <p class="t3">Devolución o anulación de pedido</p>
+  <p class="t3">Devoluci&oacute;n o anulaci&oacute;n de pedido</p>
 
-    <p>Puedes devolver un producto o pedido que por algún motivo no satisface 
+    <p>Puedes devolver un producto o pedido que por alg&uacute;n motivo no satisface 
       tus expectativas.</p>
-    <p>Plazo de tramitación: Dispones de 10 días hábiles 
-      para gestionar la devolución de un producto o pedido desde que su 
+    <p>Plazo de tramitaci&oacute;n: Dispones de 10 d&iacute;as h&aacute;biles 
+      para gestionar la devoluci&oacute;n de un producto o pedido desde que su 
       estado es Entregado en Mi Cuenta.</p>
     <p>Estado del pedido: Desde que te llega hasta que aparece en la web como 
       Entregado pueden pasar hasta 48 horas, puesto que es el tiempo que transcurre 
-      desde que el operador logístico realiza la entrega hasta que nos 
-      lo comunica y lo actualizamos en nuestra base de datos. Así, si tu 
+      desde que el operador log&iacute;stico realiza la entrega hasta que nos 
+      lo comunica y lo actualizamos en nuestra base de datos. As&iacute;, si tu 
       pedido no aparece en la lista del apartado Devoluciones, te aconsejamos 
       que lo vuelvas a intentar pasado este plazo.</p>
     <p>Condiciones del paquete: El producto debe estar en perfecto estado, con 
       el embalaje y etiquetado original y en la misma caja o sobre que te hemos 
-      enviado, o en su defecto en algún formato similar que garantice la 
-      devolución en perfecto estado.</p>
-    <p>Albarán: Debes incluir una copia del albarán de devolución 
+      enviado, o en su defecto en alg&uacute;n formato similar que garantice la 
+      devoluci&oacute;n en perfecto estado.</p>
+    <p>Albar&aacute;n: Debes incluir una copia del albar&aacute;n de devoluci&oacute;n 
       dentro de la caja que pasaremos a recoger. Puedes descargarlo desde el e-mail 
-      de confirmación de tu devolución o durante el proceso a través 
+      de confirmaci&oacute;n de tu devoluci&oacute;n o durante el proceso a trav&eacute;s 
       de la web.</p>
-    <p>Abono: Una vez recibamos la devolución en nuestros almacenes procederemos 
-      a abonarte el importe correspondiente. En 48 horas verás reflejado 
-      el ingreso en el extracto de movimientos de tu tarjeta de crédito 
-      o de tu cuenta bancaria si pagaste con tarjeta de débito.</p>
+    <p>Abono: Una vez recibamos la devoluci&oacute;n en nuestros almacenes procederemos 
+      a abonarte el importe correspondiente. En 48 horas ver&aacute;s reflejado 
+      el ingreso en el extracto de movimientos de tu tarjeta de cr&eacute;dito 
+      o de tu cuenta bancaria si pagaste con tarjeta de d&eacute;bito.</p>
     <p></p>
     <p class="t3">Seguridad</p>
 
-    <p>Tus datos se transmiten cifrados a través de una plataforma de pago 
+    <p>Tus datos se transmiten cifrados a trav&eacute;s de una plataforma de pago 
       totalmente segura.</p>
 
   <p class="t3">Privacidad</p>
 
-    <p>Los Socios y Usuarios se comprometen a navegar por la página web y 
+    <p>Los Socios y Usuarios se comprometen a navegar por la p&acute;gina web y 
       a utilizar el contenido de buena fe.</p>
-    <p>En cumplimiento de lo establecido en la Ley Orgánica 15/1999, de 
-      Protección de Datos de Carácter Personal, le informamos de 
-      que la cumplimentación de cualquier formulario existente en Sitio 
-      Web www.laaceitera.com o la remisión de un correo electrónico 
-      a cualquiera de nuestros buzones implica la aceptación de esta política 
-      de privacidad, así como la autorización a La Aceitera para que 
+    <p>En cumplimiento de lo establecido en la Ley Org&aacute;nica 15/1999, de 
+      Protecci&oacute;n de Datos de Car&aacute;cter Personal, le informamos de 
+      que la cumplimentaci&oacute;n de cualquier formulario existente en Sitio 
+      Web www.laaceitera.com o la remisi&oacute;n de un correo electr&oacute;nico 
+      a cualquiera de nuestros buzones implica la aceptaci&oacute;n de esta pol&iacute;tica 
+      de privacidad, as&iacute; como la autorizaci&oacute;n a La Aceitera para que 
       trate los datos personales que nos facilite.</p>
-    <p>Los datos de los Socios serán utilizados para el envío a 
-      través de email de las ventas que realice La Aceitera y para la entrega 
+    <p>Los datos de los Socios ser&aacute;n utilizados para el env&iacute;o a 
+      trav&eacute;s de email de las ventas que realice La Aceitera y para la entrega 
       de los compras.</p>
-    <p>Por la mera visita a la web, los Usuarios no facilitan información 
+    <p>Por la mera visita a la web, los Usuarios no facilitan informaci&oacute;n 
       personal alguna ni queda obligado a facilitarla.</p>
-    <p>El ordenador donde está alojada la web utiliza cookies para mejorar 
-      el servicio prestado por La Aceitera. Estas cookies se instalan automáticamente 
-      en el ordenador empleado por los Socios y Usuarios pero no almacenan ningún 
-      tipo de información relativa a éstos.</p>
-    <p>La Aceitera se compromete a guardar la máxima reserva y confidencialidad 
-      sobre la información que le sea facilitada y a utilizarla únicamente 
+    <p>El ordenador donde est&aacute; alojada la web utiliza cookies para mejorar 
+      el servicio prestado por La Aceitera. Estas cookies se instalan autom&aacute;ticamente 
+      en el ordenador empleado por los Socios y Usuarios pero no almacenan ning&uacute;n 
+      tipo de informaci&oacute;n relativa a &eacute;stos.</p>
+    <p>La Aceitera se compromete a guardar la m&aacute;xima reserva y confidencialidad 
+      sobre la informaci&oacute;n que le sea facilitada y a utilizarla &uacute;nicamente 
       para los fines indicados.</p>
     <p>La Aceitera presume que los datos han sido introducidos por su titular o por 
-      persona autorizada por éste, así como que son correctos y 
+      persona autorizada por &eacute;ste, as&iacute; como que son correctos y 
       exactos.</p>
-    <p>Corresponde a los Socios la actualización de sus propios datos. 
-      En cualquier momento, el Socio tendrá el derecho de acceso, rectificación, 
-      cancelación y oposición a todos sus datos personales incluidos 
+    <p>Corresponde a los Socios la actualizaci&oacute;n de sus propios datos. 
+      En cualquier momento, el Socio tendr&aacute; el derecho de acceso, rectificaci&oacute;n, 
+      cancelaci&oacute;n y oposici&acute;n a todos sus datos personales incluidos 
       en los distintos formularios de alta. Para ejercitar esta facultad el Socio 
-      deberá acceder a www.laaceitera.com, al apartado "Mi Cuenta". 
+      deber&aacute; acceder a www.laaceitera.com, al apartado "Mi Cuenta". 
       Por lo tanto, el Socio es responsable de la veracidad de los datos y La 
-      Aceitera no será responsable de su inexactitud de los datos personales 
+      Aceitera no ser&aacute; responsable de su inexactitud de los datos personales 
       de los Socios.</p>
-    <p>Conforme a la legislación vigente en materia de protección 
+    <p>Conforme a la legislaci&oacuten; vigente en materia de protecci&oacute;n 
       de datos, La Aceitera ha adoptado los niveles de seguridad adecuados a los 
-      datos facilitados por los Socios y, además, ha instalado todos los 
-      medios y medidas a su alcance para evitar la pérdida, mal uso, alteración, 
-      acceso no autorizado y extracción de los mismos.<br>
+      datos facilitados por los Socios y, adem&aacute;s, ha instalado todos los 
+      medios y medidas a su alcance para evitar la p&eacute;rdida, mal uso, alteraci&oacute;n, 
+      acceso no autorizado y extracci&oacute;n de los mismos.<br>
     </p>
     <p class="t3">
       <!--
 ************************************************
-*                 PIE de página                *
+*                 PIE de p�gina                *
 ************************************************
 -->
     </p>
@@ -250,4 +255,5 @@
 
 
 
-</body></html>
+</body>
+</html>

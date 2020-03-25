@@ -26,7 +26,7 @@
 	.t2{	
 	  font-size: 1.2em;
 	  font-weight: bold;
-		color: #fff;
+		color:#000000;
 		background-color: #CC9900;
 	  padding: 0.3em;
 	}
@@ -149,6 +149,8 @@
 	
 	.obligatorio{
 	  color: #c00;
+	  
+	  
 	}
 	
 	.campo_form{
@@ -157,11 +159,13 @@
 	
   .campo_form label{
     padding-left: 1em;
-		padding-right: 1em;
+	padding-right: 1em;
     display: block;
     width: 10em;
     float: left;
-		text-align: right;
+	text-align: right;
+	font-weight: bold;
+	
   }
 	
 	#submit{

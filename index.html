@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es"><head>
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>Producto</title>
+  <link rel="stylesheet" type="text/css" href="estilos.css" media="all"/>
+</head>
+
+<body>
+
+<div id="contenido">
+
+
+<!--
+************************************************
+*                  CABECERA                    *
+************************************************
+-->
+
+
+  <div id="logo">
+   <span id="La">La</span>
+	<span id="aceitera">Aceitera</span> 
+	<span id="lema"> tienda de aceite en Internet</span>
+   </div>
+
+
+<h2 class="t1">Cesta de la compra</h2>
+
+
+<!--
+************************************************
+*      Contenido de la CESTA de la compra      *
+************************************************
+-->
+
+
+<div id="articulos">
+
+  <h2 class="t2">Art&iacute;culos en la cesta</h2>
+	
+  <table id="tabla_compra">
+  <thead>
+  <tr id="conceptos">
+    <td><strong>Producto</strong></td>
+  	<td><strong>PVP</strong></td>
+    <td><strong>Uds.</strong></td>
+    <td><strong>Eur.</strong></td></tr>
+   </thead>
+    <tbody>
+  <tr>
+    <td><strong>Botella Oleum 500 ml</strong> (en caja de 12 unidades)</td>    <td>45 &euro;</td>    <td>2</td>    <td>90 &euro;</td>
+  </tr>
+  <tr>	
+  	    <td><strong>Aceitera de cristal Fenicia 500 ml</strong></td>
+    <td>100 &euro;</td>
+    <td>1</td>
+    <td>100 &euro;</td>
+  </tr>
+  <tr>	
+  	<td><strong>Garrafa Pet 5 litros</strong>(en caja de 3 unidades)</td>    <td>52,97 &euro;</td>    <td>1</td>    <td>52,97 &euro;</td>
+  </tr>
+  <tr id="total">	
+  	<td colspan="3" ><strong>Precio Total</strong></td>
+        <td>242,97 &euro;</td>
+  </tr>
+  </tbody></table>
+	
+	<p id="info_en">Non european customers can request a VAT refund</p>
+	
+</div>
+
+
+<!--
+************************************************
+*             DATOS de facturación             *
+************************************************
+-->
+
+
+<div id="datos">
+
+  <h2 class="t2">Datos de facturaci&oacute;n</h2>
+
+  <p class="info"><span class="i">i</span> Los campos marcados en rojo son obligatorios.</p>
+
+  <form action="http://www.example.com" >
+
+    <div id="datos_personales">
+	    <p class="t3">Datos personales</p>
+      <div class="campo_form">
+        <label for="empresa" >Empresa:</label> 
+        <input type="text" id="empresa" name="empresa"/>
+      </div>
+      <div class="campo_form">
+        <label class="obligatorio" for="nombre">Nombre </label>
+        <input id="nombre" name="nombre" type="text"/>
+      </div>
+      <div class="campo_form">
+        <label class="obligatorio" for="apellidos">Apellidos </label>
+        <input id="apellidos" name="apellidos" type="text"/>
+      </div>
+    <div class="campo_form">
+        <label class="obligatorio" for="email">e-mail </label>
+        <input id="email" name="email" type="text"/>
+      </div>
+     <div class="campo_form">
+        <label class="obligatorio" for="tlf">Tlf. de contacto </label>
+        <input id="tlf" name="tlf" type="text"/>
+      </div>
+      <div class="campo_form">
+        <label for="nif">NIF/CIF </label>
+        <input id="nif" name="nif" type="text"/>
+      </div>
+    </div>	
+
+    <div id="datos_envio">
+      <p class="t3">Datos de env&iacute;o</p>
+    	<div class="campo_form">
+        <label class="obligatorio" for="dir">Direcci&oacute;n </label>
+        <input id="dir" name="dir" type="text"/>
+      </div>
+      <div class="campo_form">
+        <label class="obligatorio" for="localidad">Localidad </label>
+        <input id="localidad" name="localidad" type="text"/>
+      </div>
+    	<div class="campo_form">
+        <label class="obligatorio" for="provincia">Provincia </label>
+        <input id="provincia" name="provincia" type="text"/>
+      </div>
+    	<div class="campo_form">
+        <label class="obligatorio" for="cp">CP </label>
+        <input id="cp" name="cp" type="text"/>
+      </div>
+      <div class="campo_form">
+       <p><label  for="horario">Horario de entrega </label>
+       <select name="horario" id="horario">    
+        	<option selected="selected" value="all">Todo el d&iacute;a</option>    
+        	<option value="a">De 9:00 a 14:00 horas</option>      
+        	<option value="b">De 14:00 a 19:00 horas</option>      
+        </select>
+        </p>
+     </div>
+    </div>
+
+    <div id="observaciones">
+      <label for="obs">Observaciones:</label>
+      <textarea rows="6" cols="80" id="obs" name="obs">      </textarea>
+    </div>
+
+    <p id="submit">
+      <input value="Realizar Pedido" type="submit"/>
+    </p>
+  </form>
+
+</div>
+
+
+<!--
+************************************************
+*           Información de GARANTIAS           *
+************************************************
+-->
+
+
+<div id="garantias">
+
+  <h2 class="t2">Garant&iacute;as</h2>
+
+  <p class="t3">Devoluci&oacute;n o anulaci&oacute;n de pedido</p>
+
+    <p>Puedes devolver un producto o pedido que por alg&uacute;n motivo no satisface 
+      tus expectativas.</p>
+    <p>Plazo de tramitaci&oacute;n: Dispones de 10 d&iacute;as h&aacute;biles 
+      para gestionar la devoluci&oacute;n de un producto o pedido desde que su 
+      estado es Entregado en Mi Cuenta.</p>
+    <p>Estado del pedido: Desde que te llega hasta que aparece en la web como 
+      Entregado pueden pasar hasta 48 horas, puesto que es el tiempo que transcurre 
+      desde que el operador log&iacute;stico realiza la entrega hasta que nos 
+      lo comunica y lo actualizamos en nuestra base de datos. As&iacute;, si tu 
+      pedido no aparece en la lista del apartado Devoluciones, te aconsejamos 
+      que lo vuelvas a intentar pasado este plazo.</p>
+    <p>Condiciones del paquete: El producto debe estar en perfecto estado, con 
+      el embalaje y etiquetado original y en la misma caja o sobre que te hemos 
+      enviado, o en su defecto en alg&uacute;n formato similar que garantice la 
+      devoluci&oacute;n en perfecto estado.</p>
+    <p>Albar&aacute;n: Debes incluir una copia del albar&aacute;n de devoluci&oacute;n 
+      dentro de la caja que pasaremos a recoger. Puedes descargarlo desde el e-mail 
+      de confirmaci&oacute;n de tu devoluci&oacute;n o durante el proceso a trav&eacute;s 
+      de la web.</p>
+    <p>Abono: Una vez recibamos la devoluci&oacute;n en nuestros almacenes procederemos 
+      a abonarte el importe correspondiente. En 48 horas ver&aacute;s reflejado 
+      el ingreso en el extracto de movimientos de tu tarjeta de cr&eacute;dito 
+      o de tu cuenta bancaria si pagaste con tarjeta de d&eacute;bito.</p>
+    <p></p>
+    <p class="t3">Seguridad</p>
+
+    <p>Tus datos se transmiten cifrados a trav&eacute;s de una plataforma de pago 
+      totalmente segura.</p>
+
+  <p class="t3">Privacidad</p>
+
+    <p>Los Socios y Usuarios se comprometen a navegar por la p&acute;gina web y 
+      a utilizar el contenido de buena fe.</p>
+    <p>En cumplimiento de lo establecido en la Ley Org&aacute;nica 15/1999, de 
+      Protecci&oacute;n de Datos de Car&aacute;cter Personal, le informamos de 
+      que la cumplimentaci&oacute;n de cualquier formulario existente en Sitio 
+      Web www.laaceitera.com o la remisi&oacute;n de un correo electr&oacute;nico 
+      a cualquiera de nuestros buzones implica la aceptaci&oacute;n de esta pol&iacute;tica 
+      de privacidad, as&iacute; como la autorizaci&oacute;n a La Aceitera para que 
+      trate los datos personales que nos facilite.</p>
+    <p>Los datos de los Socios ser&aacute;n utilizados para el env&iacute;o a 
+      trav&eacute;s de email de las ventas que realice La Aceitera y para la entrega 
+      de los compras.</p>
+    <p>Por la mera visita a la web, los Usuarios no facilitan informaci&oacute;n 
+      personal alguna ni queda obligado a facilitarla.</p>
+    <p>El ordenador donde est&aacute; alojada la web utiliza cookies para mejorar 
+      el servicio prestado por La Aceitera. Estas cookies se instalan autom&aacute;ticamente 
+      en el ordenador empleado por los Socios y Usuarios pero no almacenan ning&uacute;n 
+      tipo de informaci&oacute;n relativa a &eacute;stos.</p>
+    <p>La Aceitera se compromete a guardar la m&aacute;xima reserva y confidencialidad 
+      sobre la informaci&oacute;n que le sea facilitada y a utilizarla &uacute;nicamente 
+      para los fines indicados.</p>
+    <p>La Aceitera presume que los datos han sido introducidos por su titular o por 
+      persona autorizada por &eacute;ste, as&iacute; como que son correctos y 
+      exactos.</p>
+    <p>Corresponde a los Socios la actualizaci&oacute;n de sus propios datos. 
+      En cualquier momento, el Socio tendr&aacute; el derecho de acceso, rectificaci&oacute;n, 
+      cancelaci&oacute;n y oposici&acute;n a todos sus datos personales incluidos 
+      en los distintos formularios de alta. Para ejercitar esta facultad el Socio 
+      deber&aacute; acceder a www.laaceitera.com, al apartado "Mi Cuenta". 
+      Por lo tanto, el Socio es responsable de la veracidad de los datos y La 
+      Aceitera no ser&aacute; responsable de su inexactitud de los datos personales 
+      de los Socios.</p>
+    <p>Conforme a la legislaci&oacute; vigente en materia de protecci&oacute;n 
+      de datos, La Aceitera ha adoptado los niveles de seguridad adecuados a los 
+      datos facilitados por los Socios y, adem&aacute;s, ha instalado todos los 
+      medios y medidas a su alcance para evitar la p&eacute;rdida, mal uso, alteraci&oacute;n, 
+      acceso no autorizado y extracci&oacute;n de los mismos.<br></br>
+    </p>
+    <p class="t3">
+      <!--
+************************************************
+*                 PIE de página                *
+************************************************
+-->
+    </p>
+  </div>
+
+
+  <p id="pie"> 2016 La Aceitera. 37008 Salamanca</p>
+
+</div>
+
+
+
+
+</body>
+</html>

@@ -2,7 +2,7 @@
   body {
 	  font-family: verdana, arial, helvetica, sans-serif;
 		font-size: 0.7em;
-		color: #666;
+		color:#5500ff;
 	}
 	
 	#contenido {
@@ -44,7 +44,7 @@
 	
 	
 	#logo{
-	  background-color: #f0f0f0;
+	  background-color:#CC9900;
 		border: 1px solid #ccc;
 		padding: 1em 2em 1em 2em;
 		font-size: 1em;
@@ -54,7 +54,7 @@
 	  font-family: arial, helvetica, sans-serif;
 	  font-weight: bold;
 	  font-size: 3em;
-		color: #CC9900;
+	  color: #000000;
 	}
 	
 	#aceitera{
@@ -66,10 +66,10 @@
 	
 	#lema{
 	  font-family: arial, helvetica, sans-serif;
-		font-weight: bold;
+	  font-weight: bold;
 	  font-size: 1.2em;
-		font-style: italic;
-		color: #999;
+	  font-style: italic;
+	  color: #000000;
 	}	
 	
 	
